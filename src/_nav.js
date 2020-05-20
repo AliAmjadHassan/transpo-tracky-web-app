@@ -135,7 +135,7 @@ export default {
       ]
     },
     {
-      name: "Drivers",
+      name: "Employee",
       url: "/",
       icon: "icon-people",
       children: [
@@ -157,11 +157,11 @@ export default {
     },
 
     {
-      name: "Fee Paying Students",
+      name: "Allowed Passenger",
       icon: "icon-people",
       children: [
         {
-          name: "Add Students",
+          name: "Add Passengers",
           url: "/add-paid-students",
           icon: "icon-people"
           // badge: {

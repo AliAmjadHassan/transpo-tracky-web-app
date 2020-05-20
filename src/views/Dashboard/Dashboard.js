@@ -357,7 +357,7 @@ const makeSparkLineData = (dataSetNo, variant) => {
     datasets: [
       {
         backgroundColor: "transparent",
-        borderColor: variant ? variant : "#c2cfd6",
+        borderColor: variant ? variant : "#344a32",
         data: dataset.data,
         label: dataset.label
       }
@@ -426,7 +426,7 @@ const mainChart = {
       label: "Route 1",
       backgroundColor: hexToRgba(brandInfo, 10),
       borderColor: brandInfo,
-      pointHoverBackgroundColor: "#fff",
+      pointHoverBackgroundColor: "#344a32",
       borderWidth: 2,
       data: data1
     },
@@ -543,9 +543,9 @@ class Dashboard extends Component {
                       this.setState({ card1: !this.state.card1 });
                     }}
                   >
-                    <DropdownToggle caret className="p-0" color="transparent">
+                    {/* <DropdownToggle caret className="p-0" color="transparent">
                       <i className="icon-settings"></i>
-                    </DropdownToggle>
+                    </DropdownToggle> */}
                     <DropdownMenu right>
                       <DropdownItem>View Details</DropdownItem>
                       <DropdownItem>Update Route</DropdownItem>
@@ -576,9 +576,9 @@ class Dashboard extends Component {
                       this.setState({ card2: !this.state.card2 });
                     }}
                   >
-                    <DropdownToggle caret className="p-0" color="transparent">
+                    {/* <DropdownToggle caret className="p-0" color="transparent">
                       <i className="icon-settings"></i>
-                    </DropdownToggle>
+                    </DropdownToggle> */}
                     <DropdownMenu right>
                       <DropdownItem>View Details</DropdownItem>
                       <DropdownItem>Update Route</DropdownItem>
@@ -609,9 +609,9 @@ class Dashboard extends Component {
                       this.setState({ card3: !this.state.card3 });
                     }}
                   >
-                    <DropdownToggle caret className="p-0" color="transparent">
+                    {/* <DropdownToggle caret className="p-0" color="transparent">
                       <i className="icon-settings"></i>
-                    </DropdownToggle>
+                    </DropdownToggle> */}
                     <DropdownMenu right>
                       <DropdownItem>View Details</DropdownItem>
                       <DropdownItem>Update Route</DropdownItem>
@@ -642,9 +642,9 @@ class Dashboard extends Component {
                       this.setState({ card4: !this.state.card4 });
                     }}
                   >
-                    <DropdownToggle caret className="p-0" color="transparent">
+                    {/* <DropdownToggle caret className="p-0" color="transparent">
                       <i className="icon-settings"></i>
-                    </DropdownToggle>
+                    </DropdownToggle> */}
                     <DropdownMenu right>
                       <DropdownItem>View Details</DropdownItem>
                       <DropdownItem>Update Route</DropdownItem>

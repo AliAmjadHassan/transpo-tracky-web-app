@@ -7,22 +7,15 @@ import {
   CardFooter,
   CardHeader,
   Col,
-  Collapse,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  Fade,
   Form,
   FormGroup,
   FormText,
-  FormFeedback,
   Input,
   InputGroup,
   InputGroupAddon,
-  InputGroupButtonDropdown,
   InputGroupText,
   Label,
-  Row
+  Row,
 } from "reactstrap";
 class BusRoutes extends Component {
   state = {};
@@ -206,7 +199,6 @@ class BusRoutes extends Component {
                       </Input>
                     </Col>
                   </FormGroup>
-
                 </Form>
               </CardBody>
               <CardFooter>

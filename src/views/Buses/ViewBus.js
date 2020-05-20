@@ -12,7 +12,7 @@ import {
   PaginationLink,
   Row,
   Table,
-  Button
+  Button,
 } from "reactstrap";
 
 class ViewBus extends Component {
@@ -32,86 +32,45 @@ class ViewBus extends Component {
                     <tr>
                       <th>Bus Number</th>
                       <th>Manufacture Name</th>
-                      <th>Active status</th>
                       <th>Bus Capacity</th>
                       <th>Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>1</td>
+                      <td>LEH-1596</td>
                       <td>Millat</td>
-                      <td>
-                        <AppSwitch
-                          className={"mx-1"}
-                          variant={"3d"}
-                          outline={"alt"}
-                          color={"primary"}
-                          defaultChecked
-                          label
-                        />
-                      </td>
                       <td>72 </td>
                       <td>
-                        <Col col="6" sm="4" md="2" xl className="mb-3 mb-xl-0">
+                        <Col col="3" md="12">
                           <Button block color="ghost-success">
-                            View
+                            Edit
                           </Button>
                         </Col>
                       </td>
                     </tr>
                     <tr>
-                      <td>2</td>
-                      <td>abc</td>
+                      <td>LEP-1592</td>
+                      <td>Milllat</td>
+                      <td>60</td>
                       <td>
-                        <AppSwitch
-                          className={"mx-1"}
-                          variant={"3d"}
-                          outline={"alt"}
-                          color={"primary"}
-                          defaultChecked
-                          label
-                        />
-                      </td>
-                      <td>
-                       60
-                      </td>
-                      <td>
-                        <Col col="3" sm="4" md="1" xl className="mb-3 mb-xl-0">
+                        <Col col="3" md="12">
                           <Button block color="ghost-success">
-                            View
+                            Edit
                           </Button>
                         </Col>
                       </td>
                     </tr>
                     <tr>
-                      <td>3</td>
-                      <td>Gulshan Ravi-Comsats</td>
+                      <td>ALI-1234</td>
+                      <td>Audi</td>
+                      <td>35</td>
                       <td>
-                        <AppSwitch
-                          className={"mx-1"}
-                          variant={"3d"}
-                          outline={"alt"}
-                          color={"primary"}
-                          label
-                        />
-                      </td>
-                      <td>
-                       35
-                      </td>
-                      <td>
-                        <Row>
-                          <Col col="1" md="">
-                            <Button block color="ghost-secondary">
-                              Update
-                            </Button>
-                          </Col>
-                          <Col col="3" md="6">
-                            <Button block color="ghost-danger">
-                              Delete
-                            </Button>
-                          </Col>
-                        </Row>
+                        <Col col="3" md="12">
+                          <Button block color="ghost-success">
+                            Edit
+                          </Button>
+                        </Col>
                       </td>
                     </tr>
                   </tbody>

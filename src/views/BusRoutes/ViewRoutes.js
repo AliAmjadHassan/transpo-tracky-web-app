@@ -34,8 +34,6 @@ class ViewRoutes extends Component {
                     <tr>
                       <th>Route Number</th>
                       <th>Route Name</th>
-                      <th>Live Status</th>
-                      <th>Active Status</th>
                       <th>Actions</th>
                     </tr>
                   </thead>
@@ -43,69 +41,38 @@ class ViewRoutes extends Component {
                     <tr>
                       <td>1</td>
                       <td>Muridke-Comsats</td>
+
                       <td>
-                        <AppSwitch
-                          className={"mx-1"}
-                          variant={"3d"}
-                          outline={"alt"}
-                          color={"primary"}
-                          defaultChecked
-                          label
-                        />
-                      </td>
-                      <td>
-                        <Badge color="success">Active</Badge>
-                      </td>
-                      <td>
-                        <Col col="6" sm="4" md="2" xl className="mb-3 mb-xl-0">
-                         <Link to={"/edit-routes"} style={{ textDecoration: 'none' }}>
-                         <Button block color="ghost-success">
-                            Edit
-                          </Button>
-                         </Link>
-                          
+                        <Col col="3" md="12">
+                          <Link
+                            to={"/edit-routes"}
+                            style={{ textDecoration: "none" }}
+                          >
+                            <Button block color="ghost-success">
+                              Edit
+                            </Button>
+                          </Link>
                         </Col>
                       </td>
                     </tr>
                     <tr>
                       <td>2</td>
                       <td>Shahdrah-Muridke</td>
+
                       <td>
-                        <AppSwitch
-                          className={"mx-1"}
-                          variant={"3d"}
-                          outline={"alt"}
-                          color={"primary"}
-                          defaultChecked
-                          label
-                        />
-                      </td>
-                      <td>
-                        <Badge color="danger">Inactive</Badge>
-                      </td>
-                      <td>
-                        <Col col="3" sm="4" md="1" xl className="mb-3 mb-xl-0">
-                          <Button block color="ghost-success">
-                            Edit
-                          </Button>
-                        </Col>
+                      <Row>
+                          <Col col="3" md="12">
+                            <Button block color="ghost-success">
+                              Edit
+                            </Button>
+                          </Col>
+                        </Row>
                       </td>
                     </tr>
                     <tr>
                       <td>3</td>
                       <td>Gulshan Ravi-Comsats</td>
-                      <td>
-                        <AppSwitch
-                          className={"mx-1"}
-                          variant={"3d"}
-                          outline={"alt"}
-                          color={"primary"}
-                          label
-                        />
-                      </td>
-                      <td>
-                        <Badge color="danger">Inactive</Badge>
-                      </td>
+
                       <td>
                         <Row>
                           <Col col="3" md="12">
@@ -145,14 +112,14 @@ class ViewRoutes extends Component {
                   </Pagination>
                 </nav>
                 <Col md="3">
-                  <Link to="/active-routes" style={{ textDecoration: 'none' }}>
+                  <Link to="/active-routes" style={{ textDecoration: "none" }}>
                     <Button
                       as={NavLink}
                       to={"/add-paid-students"}
                       block
                       color="ghost-success"
                     >
-                     Trips
+                      Trips
                     </Button>
                   </Link>
                 </Col>

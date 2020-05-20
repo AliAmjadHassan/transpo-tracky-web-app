@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "../Login/logo.png";
+import logo from "../Login/Logo.png";
 import {
   Button,
   Card,
@@ -26,7 +26,7 @@ class Login extends Component {
               <CardGroup>
                 <Card className="p-4">
                   <CardBody>
-                  <img height="70" width="280" src={logo} />
+                  <img height="100%" width="100%" src={logo} />
                     <Form>
                       <h1>Login</h1>
                       <p className="text-muted">Sign In to your account</p>
@@ -56,11 +56,18 @@ class Login extends Component {
                       </InputGroup>
                       <Row>
                         <Col xs="6">
-                          <Button color="primary" className="px-4">
+                        <Link
+                            to={"/dashboard"}
+                            style={{ textDecoration: "none" }}
+                          >
+                             <Button color="success" className="px-4">
                             Login
                           </Button>
+                          </Link>
+                         
                         </Col>
                         <Col xs="6" className="text-right">
+                          
                           <Button color="link" className="px-0">
                             Forgot password?
                           </Button>
@@ -69,7 +76,7 @@ class Login extends Component {
                     </Form>
                   </CardBody>
                 </Card>
-                <Card
+                {/* <Card
                   className="text-white bg-primary py-5 d-md-down-none"
                   style={{ width: "44%" }}
                 >
@@ -93,7 +100,7 @@ class Login extends Component {
                       </Link>
                     </div>
                   </CardBody>
-                </Card>
+                </Card> */}
               </CardGroup>
             </Col>
           </Row>

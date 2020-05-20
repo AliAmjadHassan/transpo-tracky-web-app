@@ -45,17 +45,49 @@ class ViewFeePayingStudents extends Component {
                     <thead>
                       <tr>
                         <th>Name</th>
-                        <th>Roll Number</th>
+                        <th>ID</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>Ali Amjad</td>
                         <td>FA16-BCS-334</td>
+                        <td>
+                        <Row>
+                          <Col col="3" md="12">
+                            <Button block color="ghost-danger">
+                              Ban
+                            </Button>
+                          </Col>
+                        </Row>
+                      </td>
                       </tr>
                       <tr>
                         <td>Shahzaib Minhas</td>
                         <td>FA16-BCS-340</td>
+                        <td>
+                        <Row>
+                          <Col col="3" md="12">
+                            <Button block color="ghost-danger">
+                              Ban
+                            </Button>
+                          </Col>
+                        </Row>
+                      </td>
+                      </tr>
+                      <tr>
+                        <td>Mam Asmara</td>
+                        <td>asmarasafdar@cuilahore.edu.pk</td>
+                        <td>
+                        <Row>
+                          <Col col="3" md="12">
+                            <Button block color="ghost-danger">
+                              Ban
+                            </Button>
+                          </Col>
+                        </Row>
+                      </td>
                       </tr>
                     </tbody>
                   </Table>
